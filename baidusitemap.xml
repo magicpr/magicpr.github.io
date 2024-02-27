@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://magicpr.github.io/2024/01/30/how-to-upgrade-chatgpt4/</loc>
+    <lastmod>2024-02-27</lastmod>
+  </url>
+  <url>
     <loc>https://magicpr.github.io/2024/01/31/build-huanshoupalu-server/</loc>
     <lastmod>2024-02-27</lastmod>
   </url>
@@ -10,10 +14,6 @@
   </url>
   <url>
     <loc>https://magicpr.github.io/2024/01/31/register-chatgpt/</loc>
-    <lastmod>2024-02-27</lastmod>
-  </url>
-  <url>
-    <loc>https://magicpr.github.io/2024/01/30/how-to-upgrade-chatgpt4/</loc>
     <lastmod>2024-02-27</lastmod>
   </url>
 </urlset> 
