@@ -742,14 +742,10 @@ function bind() {
                         img_top = "0px";
                         img_left = (document.body.clientWidth - this.width * document.body.clientHeight / this.height) / 2 + "px";
                     } else {
-                        $(".img_hidden").on('load', function() {
-                            imgHeight = $(".img_hidden").height() + "px";
-                            console.log("图片高度为：" + imgHeight);
-                            img_width = $(".img_hidden").width() + "px";
-                            console.log("图片宽度为：" + img_width);
-                            img_top = (document.body.clientHeight - $(".img_hidden").height()) / 2 + "px";
-                            img_left = (document.body.clientWidth - $(".img_hidden").width()) / 2 + "px";
-                        });
+                        img_height = $(".img_hidden").height() + "px";
+                        img_width = $(".img_hidden").width() + "px";
+                        img_top = (document.body.clientHeight - $(".img_hidden").height()) / 2 + "px";
+                        img_left = (document.body.clientWidth - $(".img_hidden").width()) / 2 + "px";
                     }
                     $("body").append('<div class="img_max" style="opacity: 0"></div>');
                     $("body").append('<img class="img_max" src="' + this.src + '" style="top:' + $(this).offset().top + 'px;left:' + $(this).offset().left + 'px; width:' + $(this).width() + 'px;height: ' + this.height + 'px;">');
