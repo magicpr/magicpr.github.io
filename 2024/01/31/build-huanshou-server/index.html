@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>阿里云上3分钟搞定幻兽帕鲁联机服务器搭建 | Hexo</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="阿里云上3分钟搞定幻兽帕鲁联机服务器搭建 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-01-30T07:19:31.000Z">
+<meta property="article:modified_time" content="2024-01-30T07:19:31.256Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>John Doe</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:akalius@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(2)</small>
+            
+        </div>
+    </li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="2">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2024/01/31/build-huanshou-server/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="阿里云上3分钟搞定幻兽帕鲁联机服务器搭建">阿里云上3分钟搞定幻兽帕鲁联机服务器搭建</span>
+            <span class="post-date" title="2024-01-31 14:17:23">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/01/30/GPT4.0%20%E6%89%8B%E6%8A%8A%E6%89%8B%20%E5%8D%87%E7%BA%A7%E6%95%99%E7%A8%8B%20%202024%E5%B9%B41%E6%9C%88%20%E6%9C%80%E6%96%B0/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="GPT4.0 手把手 升级教程  2024年1月 最新">GPT4.0 手把手 升级教程  2024年1月 最新</span>
+            <span class="post-date" title="2024-01-30 15:42:20">2024/01/30</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-build-huanshou-server" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">阿里云上3分钟搞定幻兽帕鲁联机服务器搭建</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-01-31 14:22:29'>2024-01-31 14:17</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">1. 基础部署幻兽帕鲁服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E8%AE%BF%E9%97%AE%E5%B8%95%E9%B2%81%E4%B8%93%E9%A2%98%E6%B4%BB%E5%8A%A8%E9%A1%B5"><span class="toc-text">1.1 访问帕鲁专题活动页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE"><span class="toc-text">1.2 选择配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E6%9C%8D%E5%8A%A1%E5%88%9B%E5%BB%BA"><span class="toc-text">1.3 服务创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E8%8E%B7%E5%8F%96%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9C%B0%E5%9D%80"><span class="toc-text">1.4 获取幻兽帕鲁服务器地址</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%81%94%E6%9C%BA%E6%B8%B8%E6%88%8F"><span class="toc-text">2. 联机游戏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">3. 如何更新服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Linux-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%96%B0"><span class="toc-text">3.1 Linux 系统的幻兽帕鲁服务器更新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Windows-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9B%B4%E6%96%B0"><span class="toc-text">3.2 Windows 系统的幻兽帕鲁服务器更新</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-基础部署幻兽帕鲁服务器"><a href="#1-基础部署幻兽帕鲁服务器" class="headerlink" title="1. 基础部署幻兽帕鲁服务器"></a>1. 基础部署幻兽帕鲁服务器</h2><h3 id="1-1-访问帕鲁专题活动页"><a href="#1-1-访问帕鲁专题活动页" class="headerlink" title="1.1 访问帕鲁专题活动页"></a>1.1 访问帕鲁专题活动页</h3><p>登录阿里云官网，用钉钉或者支付宝app扫码注册新用户（新用户福利较多，优惠力度大）</p>
+<p>进入阿里云游戏联机服务器专题页：<a target="_blank" rel="noopener" href="https://developer.aliyun.com/topic/ecs/huanshou?spm=a2c6h.13046898.publish-article.3.5aad6ffaSe1eeM">https://developer.aliyun.com/topic/ecs/huanshou?userCode=mb0zrid3</a></p>
+<p>点击“【官方推荐】新手玩家用计算巢一键部署帕鲁专属服务器 ”中的“一键购买及部署”。</p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/72b2abea5be04423a2f4c4cbb95d2b6f.jpeg" alt="O1CN01JvHvYy299VLlkA6oo_!!6000000008025-0-tps-2858-1020.jpeg"></p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/e7b262e0be284ef18d54d958f1bbf281.png" alt="zdtg5ua724qza_21f4c175e6304cdd8f83a66290eeb37e.png"></p>
+<p>在这里，阿里云的服务把大部分游戏需要的配置都帮你配好了，包括网络端口设置（UDP 协议访问 8211 端口）、游戏环境安装等，全程只要点击几下鼠标即可。</p>
+<h3 id="1-2-选择配置"><a href="#1-2-选择配置" class="headerlink" title="1.2 选择配置"></a>1.2 选择配置</h3><p>在服务配置页面，完成相关配置：</p>
+<ol>
+<li>服务实例名称（如无特殊要求，保持默认即可）；</li>
+<li>选择部署地域（可以选择离自己最近的城市，如无特殊要求，保持默认即可）；</li>
+<li>选择付费时长（一般选择包月，三个月的优惠幅度更大）；</li>
+<li>选择配置，一般来说配置越高越流畅。这游戏比较吃内存，所以内存尽量在16G以上（Pocketpair官方的推荐配置是4核16G，详见：<a target="_blank" rel="noopener" href="https://tech.palworldgame.com/dedicated-server-guide?spm=a2c6h.13046898.publish-article.4.5aad6ffaSe1eeM">https://tech.palworldgame.com/dedicated-server-guide</a>），CPU选4核即可，带宽方面推荐不限流量的固定带宽，延时低，畅玩体验更佳。</li>
+</ol>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/11c26fd466df4f83aed24fd4a6d61c95.png" alt="zdtg5ua724qza_a3662616af1d49fd94592d4ce8138071.png"></p>
+<p>这里阿里云也根据游戏人数不同推荐了几款配置，大家按根据一起玩的人数来选择即可。高阶DIY玩家也可以自由选择ECS配置。</p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/0ed92ea8cf6e4517b6819c2986800537.png" alt="cyrnp3txtwslq_bca78a34c59843c59d6b5dc8870699cb (1).png"></p>
+<ol>
+<li>配置服务器密码（记住你的密码，后面要用）；</li>
+<li>配置可用区（如无特殊要求，保持默认即可）。</li>
+</ol>
+<p>配置完成之后，点击下一步，确认提交订单。</p>
+<h3 id="1-3-服务创建"><a href="#1-3-服务创建" class="headerlink" title="1.3 服务创建"></a>1.3 服务创建</h3><p>在服务确认页面，勾选同意服务条款，点击“立即创建”，后面就是付款流程。</p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/43d12d7f5be440d194e9b7824e633f36.png" alt="zdtg5ua724qza_f0fa9c1007bf4ce1b63cebe6071ff737 (1).png"></p>
+<p>当出现提交成功提示，说明服务已经开始创建，点击“去列表查看”，可以看到服务正在部署中。</p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/89592f8e4e614646a3c91c2e9b525464.png" alt="zdtg5ua724qza_8cbdc40604fd428d8d84f2c7918544f8.png"></p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/02b0045d9dd742b7b7d9c3200ae01aac.png" alt="zdtg5ua724qza_653e06e2e67f42b783b4d14b613df3f2 (1).png"></p>
+<h3 id="1-4-获取幻兽帕鲁服务器地址"><a href="#1-4-获取幻兽帕鲁服务器地址" class="headerlink" title="1.4 获取幻兽帕鲁服务器地址"></a>1.4 获取幻兽帕鲁服务器地址</h3><p>服务不到1分钟即可完成创建，当服务的状态变成“已部署”，点击服务实例ID进入服务详情。</p>
+<p>到这一步的时候，帕鲁的服务端安装程序已经预置在服务的镜像里了，无需手动复制，非常方便。</p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/a49387cfd5a24ffc912a5270b9c9b4b5.png" alt="zdtg5ua724qza_3bf0c36f376e4aecb378d466e2d06440.png"></p>
+<p>看到“幻兽帕鲁服务器地址端口”，这就是你搭建服务器的IP地址了，复制这个地址用于下一步操作。</p>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/6807a1781b80488c98d1843308c5982b.png" alt="zdtg5ua724qza_18cbb07a53284d538926d4541295b07e.png"></p>
+<h2 id="2-联机游戏"><a href="#2-联机游戏" class="headerlink" title="2. 联机游戏"></a>2. 联机游戏</h2><ol>
+<li>进入Palword ，选择加入多人游戏（专用服务器）</li>
+</ol>
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/40722300e251483ea88e4f480e90ed94.jpg" alt="1111.jpg"></p>
+<ol>
+<li><p>将最下方的 127.0.0.1 这个地址换成上面最后一步里“幻兽帕鲁服务器地址端口”的IP地址，就可以跟小伙伴们愉快地联机游戏了。</p>
+</li>
+<li><p>进入游戏，创建角色，开启你的帕鲁之旅吧！</p>
+</li>
+</ol>
+<p>目前幻兽帕鲁有个内存溢出的bug，建议在阿里云的控制台里设置一个计划任务，在闲时花几分钟自动重启一下。</p>
+<h2 id="3-如何更新服务器"><a href="#3-如何更新服务器" class="headerlink" title="3. 如何更新服务器"></a>3. 如何更新服务器</h2><p>如果进入游戏时提示：「您正尝试加入的比赛正在运行不兼容的游戏版本，请尝试升级游戏版本」，说明你的客户端和幻兽帕鲁服务器版本不匹配，通常是需要更新幻兽帕鲁服务器了。</p>
+<p>在更新前，你需要确认一下自己的 ECS 服务器操作系统是 Linux 还是 Windows，然后根据系统来参考这篇文章</p>
+<p>如果进入游戏时提示：「您正尝试加入的比赛正在运行不兼容的游戏版本，请尝试升级游戏版本」，说明你的客户端和幻兽帕鲁服务器版本不匹配，通常是需要更新幻兽帕鲁服务器了。</p>
+<p>在更新前，你需要确认一下自己的 ECS 服务器操作系统是 Linux 还是 Windows，然后根据系统来参考下面的指南：</p>
+<h3 id="3-1-Linux-系统的幻兽帕鲁服务器更新"><a href="#3-1-Linux-系统的幻兽帕鲁服务器更新" class="headerlink" title="3.1 Linux 系统的幻兽帕鲁服务器更新"></a>3.1 Linux 系统的幻兽帕鲁服务器更新</h3><ol>
+<li>先访问 <a target="_blank" rel="noopener" href="https://ecs.console.aliyun.com/server?spm=a2c6h.13046898.publish-article.17.5f8c6ffaQN2pxl">ECS 控制台</a>，然后远程连接到 ECS 实例<br><img src="https://ucc.alicdn.com/pic/developer-ecology/cyrnp3txtwslq_c1ffa109668b42e59594a9e395e35d5f.png" alt="image.png"></li>
+<li>然后执行如下命令：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://icms-static-public.oss-cn-zhangjiakou.aliyuncs.com/scripts/aliyun-palworld-server-update.sh | bash</span><br></pre></td></tr></table></figure>
+
+<p>命令执行完毕后，再打开游戏重新连接服务器即可。</p>
+<h3 id="3-2-Windows-系统的幻兽帕鲁服务器更新"><a href="#3-2-Windows-系统的幻兽帕鲁服务器更新" class="headerlink" title="3.2 Windows 系统的幻兽帕鲁服务器更新"></a>3.2 Windows 系统的幻兽帕鲁服务器更新</h3><ol>
+<li>先远访问 <a target="_blank" rel="noopener" href="https://ecs.console.aliyun.com/server?spm=a2c6h.13046898.publish-article.18.5f8c6ffaQN2pxl">ECS 控制台</a>，然后远程连接到 ECS 实例<br><img src="https://ucc.alicdn.com/pic/developer-ecology/cyrnp3txtwslq_092e468c14cb41b7bcd398c49aeb0ae4.png" alt="image.png"></li>
+<li>然后在 PowerShell 中执行命令 <code>tasklist</code><br>在输出中找到程序“PalServer-Win64-Test-Cmd.”，<strong>记录后面4位数pid</strong>（例如图中的4328)<br><img src="https://ucc.alicdn.com/pic/developer-ecology/ri46twwpxfdji_202464fe9aa24aa2b605d38daeb1ba83.png" alt="image"></li>
+<li>然后执行命令 <code>kill pid</code>，例如<code>kill 4328</code>，停止正在运行的 Palworld 服务器</li>
+<li>接着执行如下命令，来获取最新的 Palworld 服务器程序，此命令执行可能较慢，因为要下载游戏服务器文件，请耐心等待其执行完成</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Start-Process &quot;C:\Program Files\PalServer\steam\steamcmd.exe&quot; -ArgumentList &quot;+login anonymous +app_update 2394010 validate +quit&quot; -Wait</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>执行完成后，还建议你重启一下 ECS 服务器，你可以在 ECS 实例列表最后的操作那一列中找到重启按钮。</li>
+</ol>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 akalius173@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
