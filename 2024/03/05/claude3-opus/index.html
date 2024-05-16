@@ -6,35 +6,34 @@
   <meta name="keywords" content=" claude ">
   <meta name="description" content="Claude3 opus，会是GPT4的取代者吗？ | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="有问题可加站主微信：  公众号：  如果还不知道如何升级到GPT4的同学可以看这篇：5分钟带你搞定chatGPT4.0 保姆级升级教程 在昨天的科技圈，深夜发布的Claude3一石激起千层浪。Anthropic没有选择大张旗鼓的发布会，而是在X论坛上发布了一则简短的公告。  这样低调的策略背后，反映出当前AI企业的一种新趋势：在技术迅猛发展的今天，他们更倾向于让产品本身的实力说话，而非华丽的营销包">
+<meta name="description" content="[TOC] 讲一下这次需要的几个步骤：1.安装chocolatey chocolatey，是一个 Windows 下的命令行软件管理器，可以方便开发者像在 Linux 下使用 yum 命令来安装软件，或者像在 macOS 下使用 brew 命令来安装软件，非常酷炫。比如直接使用命令安装jdk（不需要再手动配置环境变量）： chocolatey安装命令： 1Set-ExecutionPolicy B">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Claude3 opus，会是GPT4的取代者吗？">
-<meta property="og:url" content="https://magicpr.github.io/2024/03/05/claude3-opus/index.html">
+<meta property="og:title" content="如何使用hexo创建自己的个人博客 2024 5月">
+<meta property="og:url" content="https://magicpr.github.io/2024/05/16/create-your-blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="有问题可加站主微信：  公众号：  如果还不知道如何升级到GPT4的同学可以看这篇：5分钟带你搞定chatGPT4.0 保姆级升级教程 在昨天的科技圈，深夜发布的Claude3一石激起千层浪。Anthropic没有选择大张旗鼓的发布会，而是在X论坛上发布了一则简短的公告。  这样低调的策略背后，反映出当前AI企业的一种新趋势：在技术迅猛发展的今天，他们更倾向于让产品本身的实力说话，而非华丽的营销包">
+<meta property="og:description" content="[TOC] 讲一下这次需要的几个步骤：1.安装chocolatey chocolatey，是一个 Windows 下的命令行软件管理器，可以方便开发者像在 Linux 下使用 yum 命令来安装软件，或者像在 macOS 下使用 brew 命令来安装软件，非常酷炫。比如直接使用命令安装jdk（不需要再手动配置环境变量）： chocolatey安装命令： 1Set-ExecutionPolicy B">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305161559587.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163239779.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305161936910.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163334455.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163526715.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163841629.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164725817.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164837676.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164109991.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305170947528.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165206195.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165409676.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165448085.png">
-<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305170750617.png">
-<meta property="article:published_time" content="2024-03-05T09:11:19.000Z">
-<meta property="article:modified_time" content="2024-03-05T09:21:33.674Z">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516212301960.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516212114130.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516212459587.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516212705222.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516212929299.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516213111747.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516213236487.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516213430457.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516214536034.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516213643733.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516213745177.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516214708184.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516214741869.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516213940404.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516214254818.png">
+<meta property="article:published_time" content="2024-05-16T13:11:07.000Z">
+<meta property="article:modified_time" content="2024-05-16T13:55:44.526Z">
 <meta property="article:author" content="Magic Pr">
-<meta property="article:tag" content="claude">
+<meta property="article:tag" content="blog github chocolatey nodejs hexo oss">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg">
+<meta name="twitter:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240516212301960.png">
 
 
 <link rel="icon" href="/img/sky.jpg">
@@ -141,10 +140,25 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(7)</small>
+                <small>(8)</small>
             
         </div>
     </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="博客搭建">
+            
+            博客搭建
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
     
         
             
@@ -241,7 +255,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="7">
+<input type="hidden" id="yelog_site_posts_number" value="8">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -336,6 +350,10 @@
     <div class="tag-wrapper">
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>blog github chocolatey nodejs hexo oss</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>build server</a>
             </li>
         
@@ -373,6 +391,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 博客搭建 "
+           href="/2024/05/16/create-your-blog/"
+           data-tag="blog github chocolatey nodejs hexo oss"
+           data-author="" >
+            <span class="post-title" title="如何使用hexo创建自己的个人博客 2024 5月">如何使用hexo创建自己的个人博客 2024 5月</span>
+            <span class="post-date" title="2024-05-16 21:11:07">2024/05/16</span>
+        </a>
         
         
         <a  class="全部文章 claude "

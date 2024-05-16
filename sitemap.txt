@@ -1,3 +1,4 @@
+https://magicpr.github.io/2024/05/16/create-your-blog/
 https://magicpr.github.io/2024/02/27/register-chatgpt-account/
 https://magicpr.github.io/2024/01/30/how-to-upgrade-chatgpt4/
 https://magicpr.github.io/2024/03/05/claude3-opus/
@@ -14,8 +15,10 @@ https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/
 https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/
 https://magicpr.github.io/tags/sora/
 https://magicpr.github.io/tags/claude/
+https://magicpr.github.io/tags/blog-github-chocolatey-nodejs-hexo-oss/
 https://magicpr.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/
 https://magicpr.github.io/categories/onlyfans/
 https://magicpr.github.io/categories/chatGPT/
 https://magicpr.github.io/categories/sora/
 https://magicpr.github.io/categories/claude/
+https://magicpr.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
