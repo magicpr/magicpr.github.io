@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新 | Hexo</title>
+  <meta name="keywords" content=" chatgpt注册 ">
+  <meta name="description" content="使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="有问题可加站主微信：  公众号：  如果还不知道如何升级到GPT4的同学可以看这篇：5分钟带你搞定chatGPT4.0 保姆级升级教程 在昨天的科技圈，深夜发布的Claude3一石激起千层浪。Anthropic没有选择大张旗鼓的发布会，而是在X论坛上发布了一则简短的公告。  这样低调的策略背后，反映出当前AI企业的一种新趋势：在技术迅猛发展的今天，他们更倾向于让产品本身的实力说话，而非华丽的营销包">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Claude3 opus，会是GPT4的取代者吗？">
+<meta property="og:url" content="https://magicpr.github.io/2024/03/05/claude3-opus/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="有问题可加站主微信：  公众号：  如果还不知道如何升级到GPT4的同学可以看这篇：5分钟带你搞定chatGPT4.0 保姆级升级教程 在昨天的科技圈，深夜发布的Claude3一石激起千层浪。Anthropic没有选择大张旗鼓的发布会，而是在X论坛上发布了一则简短的公告。  这样低调的策略背后，反映出当前AI企业的一种新趋势：在技术迅猛发展的今天，他们更倾向于让产品本身的实力说话，而非华丽的营销包">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305161559587.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163239779.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305161936910.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163334455.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163526715.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163841629.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164725817.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164837676.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164109991.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305170947528.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165206195.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165409676.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165448085.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305170750617.png">
+<meta property="article:published_time" content="2024-03-05T09:11:19.000Z">
+<meta property="article:modified_time" content="2024-03-05T09:21:34.000Z">
+<meta property="article:author" content="Magic Pr">
+<meta property="article:tag" content="claude">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg">
+
+
+<link rel="icon" href="/img/sky.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/sky.jpg"/>
+</a>
+<div class="author">
+    <span>Magic Pr</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:binzhang1997@126.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(7)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="服务器搭建">
+            
+            服务器搭建
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="chatGPT">
+            
+            chatGPT
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="claude">
+            
+            claude
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="onlyfans">
+            
+            onlyfans
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="sora">
+            
+            sora
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="7">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://chatgptzhinan.com/">OpenAI-ChatGPT订阅教程</a></li>
+            
+            <li><a target="_blank" href="https://kaiho.cc/">Kaiho小站</a></li>
+            
+            <li><a target="_blank" href="http://anyubenyu.com/">ChatGPT指南、最新咨询</a></li>
+            
+            <li><a target="_blank" href="https://chatgptchina.github.io/">grootie的小站</a></li>
+            
+            <li><a target="_blank" href="https://sorachatgpt4.com/">Ai导航中文网</a></li>
+            
+            <li><a target="_blank" href="https://gpt-boot.com/">GPT教程</a></li>
+            
+            <li><a target="_blank" href="https://puputeju.com/">扑扑特桔-ChatGPT订阅教程</a></li>
+            
+            <li><a target="_blank" href="https://aibigplayer.github.io/">AI大玩家</a></li>
+            
+            <li><a target="_blank" href="https://lovechatgpt.netlify.app/">最新GPT4使用指南</a></li>
+            
+            <li><a target="_blank" href="https://chatgptgogogo.com/">ChatGPT中文网</a></li>
+            
+            <li><a target="_blank" href="https://whalecoding.com/">ChatGPT甜品铺</a></li>
+            
+            <li><a target="_blank" href="https://leedu.ac.cn/">ChatGPT-Share</a></li>
+            
+            <li><a target="_blank" href="https://chatgptbom.com/">ChatGPT指南</a></li>
+            
+            <li><a target="_blank" href="https://chatgptchina.github.io/">ChatGPT中国站</a></li>
+            
+            <li><a target="_blank" href="https://chatgpt-jx.com/">ChatGPT精选站-ChatGPT使用教程、最新资讯</a></li>
+            
+            <li><a target="_blank" href="https://cngptplus.com/">ChatGPT中文站</a></li>
+            
+            <li><a target="_blank" href="https://chatsoragpt.com/">ChatSoraGPT</a></li>
+            
+            <li><a target="_blank" href="https://gpt365blog.com/">ChatGPT365</a></li>
+            
+            <li><a target="_blank" href="https://vaq86.cn/">VAQ的博客</a></li>
+            
+            <li><a target="_blank" href="https://txccai.github.io/gptDocs/">ChatGPT相关知识学习指南</a></li>
+            
+            <li><a target="_blank" href="https://www.gpt-zhinan.com/">求索AI</a></li>
+            
+            <li><a target="_blank" href="https://www.dofoisland.com/">多福的岛屿_MoreAI</a></li>
+            
+            <li><a target="_blank" href="https://murphyzhang.top/">AI头号玩家</a></li>
+            
+            <li><a target="_blank" href="https://aliyuntm.com/">ChatGPT中文学习网站</a></li>
+            
+            <li><a target="_blank" href="https://blockcloth.cn/">M&#39;s Blog</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>build server</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chatGPT升级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chatgpt注册</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>claude</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>onlyfans</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sora</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 claude "
+           href="/2024/03/05/claude3-opus/"
+           data-tag="claude"
+           data-author="" >
+            <span class="post-title" title="Claude3 opus，会是GPT4的取代者吗？">Claude3 opus，会是GPT4的取代者吗？</span>
+            <span class="post-date" title="2024-03-05 17:11:19">2024/03/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 sora "
+           href="/2024/02/29/sora-guidance/"
+           data-tag="sora"
+           data-author="" >
+            <span class="post-title" title="sora学习手册">sora学习手册</span>
+            <span class="post-date" title="2024-02-29 17:45:17">2024/02/29</span>
+        </a>
+        
+        
+        <a  class="全部文章 chatGPT "
+           href="/2024/02/27/register-chatgpt-account/"
+           data-tag="chatgpt注册"
+           data-author="" >
+            <span class="post-title" title="使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新">使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新</span>
+            <span class="post-date" title="2024-02-27 14:38:22">2024/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 chatGPT "
+           href="/2024/01/31/register-chatgpt/"
+           data-tag="chatgpt注册"
+           data-author="" >
+            <span class="post-title" title="手把手教你使用proton邮箱注册一个ChatGPT账号 2024 1月最新（此方法已作废，待后续更新）">手把手教你使用proton邮箱注册一个ChatGPT账号 2024 1月最新（此方法已作废，待后续更新）</span>
+            <span class="post-date" title="2024-01-31 18:32:26">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 服务器搭建 "
+           href="/2024/01/31/build-huanshoupalu-server/"
+           data-tag="build server"
+           data-author="" >
+            <span class="post-title" title="阿里云上3分钟搞定幻兽帕鲁联机服务器搭建">阿里云上3分钟搞定幻兽帕鲁联机服务器搭建</span>
+            <span class="post-date" title="2024-01-31 17:04:43">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 onlyfans "
+           href="/2024/01/30/subscribe-onlyfans-by-credit-card/"
+           data-tag="onlyfans"
+           data-author="" >
+            <span class="post-title" title="手把手教你如何用虚拟卡订阅最爱的OnlyFans作者 24年1月最新版">手把手教你如何用虚拟卡订阅最爱的OnlyFans作者 24年1月最新版</span>
+            <span class="post-date" title="2024-01-30 21:55:47">2024/01/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 chatGPT "
+           href="/2024/01/30/how-to-upgrade-chatgpt4/"
+           data-tag="chatGPT升级"
+           data-author="" >
+            <span class="post-title" title="5分钟带你搞定chatGPT4.0 保姆级升级教程 2024年1月 最新">5分钟带你搞定chatGPT4.0 保姆级升级教程 2024年1月 最新</span>
+            <span class="post-date" title="2024-01-30 21:33:28">2024/01/30</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-register-chatgpt-account" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="chatGPT">chatGPT</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">chatgpt注册</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-03-05 17:28:24'>2024-02-27 14:38</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%B3%A8%E5%86%8C%E8%B0%B7%E6%AD%8C%E9%82%AE%E7%AE%B1"><span class="toc-text">一、注册谷歌邮箱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B3%A8%E5%86%8CGPT%E8%B4%A6%E5%8F%B7"><span class="toc-text">二、注册GPT账号</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有问题可加站主微信：</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg" alt="个人微"></p>
+<p>公众号：</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="公众号"></p>
+<p>最近收到很多同学反馈，proton邮箱收不到openai发送的验证邮件，自己也试了下，发现确实收不到了，于是从新写了一份教程，教大家如何使用Gmail注册gpt账号。过程简单，站主花了不到10分钟就搞定了。</p>
+<p><strong>重点，注册过程需要先挂梯子！！！</strong></p>
+<h2 id="一、注册谷歌邮箱"><a href="#一、注册谷歌邮箱" class="headerlink" title="一、注册谷歌邮箱"></a>一、注册谷歌邮箱</h2><p>点击 <a target="_blank" rel="noopener" href="https://www.google.com/intl/zh-CN/gmail/about/">Gmail</a></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227152103797.png" alt="image-20240227152103797"></p>
+<p>Create an account-&gt;For my personal use</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227152308754.png" alt="image-20240227152308754"></p>
+<p>填写姓氏，名字，下一步</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227152357050.png" alt="image-20240227152357050"></p>
+<p>选择一个邮箱地址或者自定义一个</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227152638003.png" alt="image-20240227152638003"></p>
+<p>创建密码</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153047657.png" alt="image-20240227153047657"></p>
+<p>选择中国区，输入你的手机号</p>
+<p><strong>重点！！！记得切换语言系统为英语，包括你的浏览器、ip。</strong></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153237597.png" alt="image-20240227153237597"></p>
+<p>输入验证码</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153356892.png" alt="image-20240227153356892"></p>
+<p>辅助邮箱可填，可不填，建议填一下，方便日后维护账号</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153438518.png" alt="image-20240227153438518"></p>
+<p>查看账号信息，点击下一步</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153618302.png" alt="image-20240227153618302"></p>
+<p>阅读条款，点击同意，确认</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153716387.png" alt="image-20240227153716387"></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227153722735.png" alt="image-20240227153722735"></p>
+<h2 id="二、注册GPT账号"><a href="#二、注册GPT账号" class="headerlink" title="二、注册GPT账号"></a>二、注册GPT账号</h2><p>打开 <a target="_blank" rel="noopener" href="https://chat.openai.com/auth/login">ChatGPT 官网</a></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227154058461.png" alt="image-20240227154058461"></p>
+<p>点击注册，输入刚刚创建的邮箱地址，继续</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227154145560.png" alt="image-20240227154145560"></p>
+<p>填写密码，继续</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227154725610.png" alt="image-20240227154725610"></p>
+<p>open gmail</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227154800039.png" alt="image-20240227154800039"></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227154900326.png" alt="image-20240227154900326"></p>
+<p>verify email address</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227154922596.png" alt="image-20240227154922596"></p>
+<p>输入名字、生日，Agree</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240227155022586.png" alt="image-20240227155022586"></p>
+<p>大功告成！</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/GPT%E6%B3%A8%E5%86%8C%E6%88%90%E5%8A%9F.jpg" alt="GPT注册成功"></p>
+<p><a href="https://magicpr.github.io/2024/01/31/register-chatgpt/">上一篇</a></p>
+<p><a href="https://magicpr.github.io/">目录</a></p>
+<p><a href="https://magicpr.github.io/2024/02/29/sora-guidance/">下一篇</a></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 akalius173@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '3d0ddc0abd1462e27956',
+            clientSecret: '80c092f151d1ad480f7284b02063cfe2966363b7',
+            repo: 'magicpr.github.io',
+            owner: 'magicpr',
+            admin: ['magicpr'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'false',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>sora学习手册 | Hexo</title>
+  <meta name="keywords" content=" sora ">
+  <meta name="description" content="sora学习手册 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="有问题可加站主微信：  公众号：  如果还不知道如何升级到GPT4的同学可以看这篇：5分钟带你搞定chatGPT4.0 保姆级升级教程 在昨天的科技圈，深夜发布的Claude3一石激起千层浪。Anthropic没有选择大张旗鼓的发布会，而是在X论坛上发布了一则简短的公告。  这样低调的策略背后，反映出当前AI企业的一种新趋势：在技术迅猛发展的今天，他们更倾向于让产品本身的实力说话，而非华丽的营销包">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Claude3 opus，会是GPT4的取代者吗？">
+<meta property="og:url" content="https://magicpr.github.io/2024/03/05/claude3-opus/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="有问题可加站主微信：  公众号：  如果还不知道如何升级到GPT4的同学可以看这篇：5分钟带你搞定chatGPT4.0 保姆级升级教程 在昨天的科技圈，深夜发布的Claude3一石激起千层浪。Anthropic没有选择大张旗鼓的发布会，而是在X论坛上发布了一则简短的公告。  这样低调的策略背后，反映出当前AI企业的一种新趋势：在技术迅猛发展的今天，他们更倾向于让产品本身的实力说话，而非华丽的营销包">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305161559587.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163239779.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305161936910.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163334455.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163526715.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305163841629.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164725817.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164837676.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305164109991.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305170947528.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165206195.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165409676.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305165448085.png">
+<meta property="og:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/image-20240305170750617.png">
+<meta property="article:published_time" content="2024-03-05T09:11:19.000Z">
+<meta property="article:modified_time" content="2024-03-05T09:21:34.000Z">
+<meta property="article:author" content="Magic Pr">
+<meta property="article:tag" content="claude">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg">
+
+
+<link rel="icon" href="/img/sky.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/sky.jpg"/>
+</a>
+<div class="author">
+    <span>Magic Pr</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:binzhang1997@126.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(7)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="服务器搭建">
+            
+            服务器搭建
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="chatGPT">
+            
+            chatGPT
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="claude">
+            
+            claude
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="onlyfans">
+            
+            onlyfans
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="sora">
+            
+            sora
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="7">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://chatgptzhinan.com/">OpenAI-ChatGPT订阅教程</a></li>
+            
+            <li><a target="_blank" href="https://kaiho.cc/">Kaiho小站</a></li>
+            
+            <li><a target="_blank" href="http://anyubenyu.com/">ChatGPT指南、最新咨询</a></li>
+            
+            <li><a target="_blank" href="https://chatgptchina.github.io/">grootie的小站</a></li>
+            
+            <li><a target="_blank" href="https://sorachatgpt4.com/">Ai导航中文网</a></li>
+            
+            <li><a target="_blank" href="https://gpt-boot.com/">GPT教程</a></li>
+            
+            <li><a target="_blank" href="https://puputeju.com/">扑扑特桔-ChatGPT订阅教程</a></li>
+            
+            <li><a target="_blank" href="https://aibigplayer.github.io/">AI大玩家</a></li>
+            
+            <li><a target="_blank" href="https://lovechatgpt.netlify.app/">最新GPT4使用指南</a></li>
+            
+            <li><a target="_blank" href="https://chatgptgogogo.com/">ChatGPT中文网</a></li>
+            
+            <li><a target="_blank" href="https://whalecoding.com/">ChatGPT甜品铺</a></li>
+            
+            <li><a target="_blank" href="https://leedu.ac.cn/">ChatGPT-Share</a></li>
+            
+            <li><a target="_blank" href="https://chatgptbom.com/">ChatGPT指南</a></li>
+            
+            <li><a target="_blank" href="https://chatgptchina.github.io/">ChatGPT中国站</a></li>
+            
+            <li><a target="_blank" href="https://chatgpt-jx.com/">ChatGPT精选站-ChatGPT使用教程、最新资讯</a></li>
+            
+            <li><a target="_blank" href="https://cngptplus.com/">ChatGPT中文站</a></li>
+            
+            <li><a target="_blank" href="https://chatsoragpt.com/">ChatSoraGPT</a></li>
+            
+            <li><a target="_blank" href="https://gpt365blog.com/">ChatGPT365</a></li>
+            
+            <li><a target="_blank" href="https://vaq86.cn/">VAQ的博客</a></li>
+            
+            <li><a target="_blank" href="https://txccai.github.io/gptDocs/">ChatGPT相关知识学习指南</a></li>
+            
+            <li><a target="_blank" href="https://www.gpt-zhinan.com/">求索AI</a></li>
+            
+            <li><a target="_blank" href="https://www.dofoisland.com/">多福的岛屿_MoreAI</a></li>
+            
+            <li><a target="_blank" href="https://murphyzhang.top/">AI头号玩家</a></li>
+            
+            <li><a target="_blank" href="https://aliyuntm.com/">ChatGPT中文学习网站</a></li>
+            
+            <li><a target="_blank" href="https://blockcloth.cn/">M&#39;s Blog</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>build server</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chatGPT升级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chatgpt注册</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>claude</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>onlyfans</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sora</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 claude "
+           href="/2024/03/05/claude3-opus/"
+           data-tag="claude"
+           data-author="" >
+            <span class="post-title" title="Claude3 opus，会是GPT4的取代者吗？">Claude3 opus，会是GPT4的取代者吗？</span>
+            <span class="post-date" title="2024-03-05 17:11:19">2024/03/05</span>
+        </a>
+        
+        
+        <a  class="全部文章 sora "
+           href="/2024/02/29/sora-guidance/"
+           data-tag="sora"
+           data-author="" >
+            <span class="post-title" title="sora学习手册">sora学习手册</span>
+            <span class="post-date" title="2024-02-29 17:45:17">2024/02/29</span>
+        </a>
+        
+        
+        <a  class="全部文章 chatGPT "
+           href="/2024/02/27/register-chatgpt-account/"
+           data-tag="chatgpt注册"
+           data-author="" >
+            <span class="post-title" title="使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新">使用GMail注册 ChatGPT账号（解决proton邮箱收不到openai发送的验证邮件问题）2024 02 最新</span>
+            <span class="post-date" title="2024-02-27 14:38:22">2024/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 chatGPT "
+           href="/2024/01/31/register-chatgpt/"
+           data-tag="chatgpt注册"
+           data-author="" >
+            <span class="post-title" title="手把手教你使用proton邮箱注册一个ChatGPT账号 2024 1月最新（此方法已作废，待后续更新）">手把手教你使用proton邮箱注册一个ChatGPT账号 2024 1月最新（此方法已作废，待后续更新）</span>
+            <span class="post-date" title="2024-01-31 18:32:26">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 服务器搭建 "
+           href="/2024/01/31/build-huanshoupalu-server/"
+           data-tag="build server"
+           data-author="" >
+            <span class="post-title" title="阿里云上3分钟搞定幻兽帕鲁联机服务器搭建">阿里云上3分钟搞定幻兽帕鲁联机服务器搭建</span>
+            <span class="post-date" title="2024-01-31 17:04:43">2024/01/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 onlyfans "
+           href="/2024/01/30/subscribe-onlyfans-by-credit-card/"
+           data-tag="onlyfans"
+           data-author="" >
+            <span class="post-title" title="手把手教你如何用虚拟卡订阅最爱的OnlyFans作者 24年1月最新版">手把手教你如何用虚拟卡订阅最爱的OnlyFans作者 24年1月最新版</span>
+            <span class="post-date" title="2024-01-30 21:55:47">2024/01/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 chatGPT "
+           href="/2024/01/30/how-to-upgrade-chatgpt4/"
+           data-tag="chatGPT升级"
+           data-author="" >
+            <span class="post-title" title="5分钟带你搞定chatGPT4.0 保姆级升级教程 2024年1月 最新">5分钟带你搞定chatGPT4.0 保姆级升级教程 2024年1月 最新</span>
+            <span class="post-date" title="2024-01-30 21:33:28">2024/01/30</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-sora-guidance" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">sora学习手册</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="sora">sora</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">sora</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-03-05 17:13:10'>2024-02-29 17:45</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="toc-text">一、基本介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%9A%E4%B8%BB%E8%A7%A3%E8%AF%BB"><span class="toc-text">博主解读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sora%E6%80%8E%E4%B9%88%E7%94%B3%E8%AF%B7"><span class="toc-text">Sora怎么申请</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sora%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8"><span class="toc-text">Sora怎么使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E6%95%88%E6%9E%9C%E5%AF%B9%E6%AF%94"><span class="toc-text">模型效果对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sora%E7%9A%84%E5%85%AD%E5%A4%A7%E4%BC%98%E5%8A%BF"><span class="toc-text">Sora的六大优势</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sora%E5%8F%AF%E8%83%BD%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-text">Sora可能带来的影响</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%8A%80%E6%9C%AF%E6%8B%86%E8%A7%A3"><span class="toc-text">二、技术拆解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%85%BE%E8%AE%AF%E7%A7%91%E6%8A%80%E6%8B%86%E8%A7%A3%E6%96%87"><span class="toc-text">腾讯科技拆解文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E5%88%86%E6%9E%90%E6%96%87"><span class="toc-text">阿里巴巴分析文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A0%E4%BA%BA%E7%AC%94%E8%AE%B0"><span class="toc-text">素人笔记</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%AE%BA%E6%96%87"><span class="toc-text">参考论文</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%90%8D%E4%BA%BA%E8%A7%82%E7%82%B9"><span class="toc-text">三、名人观点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#360%E8%91%A3%E4%BA%8B%E9%95%BF%E5%91%A8%E9%B8%BF%E7%A5%8E"><span class="toc-text">360董事长周鸿祎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%96%AF%E6%8B%89CEO-%E9%A9%AC%E6%96%AF%E5%85%8B"><span class="toc-text">特斯拉CEO 马斯克</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Runway-%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%E5%85%BC-CEO-Cristobal-Valenzuela"><span class="toc-text">Runway 联合创始人兼 CEO Cristóbal Valenzuela</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BA%E9%97%A8%E9%97%AE%E9%97%AECEO-%E6%9D%8E%E5%BF%97%E9%A3%9E"><span class="toc-text">出门问问CEO 李志飞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E9%98%BF%E9%87%8C%E5%89%AF%E6%80%BB%E8%A3%81%E8%B4%BE%E6%9D%A8%E6%B8%85"><span class="toc-text">前阿里副总裁贾杨清</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%9B%B8%E5%85%B3%E6%8A%A5%E9%81%93"><span class="toc-text">四、相关报道</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E4%B8%9A%E5%8D%9A%E4%B8%BB%E5%88%98%E6%B6%A6"><span class="toc-text">商业博主刘润</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AI-%E5%8D%9A%E4%B8%BB%E5%8D%A1%E5%85%B9%E5%85%8B"><span class="toc-text">AI 博主卡兹克</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8F%E5%AD%90%E4%BD%8D"><span class="toc-text">量子位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%92%9B%E5%AA%92%E4%BD%93"><span class="toc-text">钛媒体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E6%99%BA%E5%85%83"><span class="toc-text">新智元</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6"><span class="toc-text">清华大学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%AE%E8%A7%86%E7%BD%91"><span class="toc-text">央视网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%8D%8E%E7%A4%BE"><span class="toc-text">新华社</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSDN"><span class="toc-text">CSDN</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有问题可加站主微信：</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE.jpg" alt="个人微"></p>
+<p>公众号：</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="公众号"></p>
+<h2 id="一、基本介绍"><a href="#一、基本介绍" class="headerlink" title="一、基本介绍"></a><strong>一、基本介绍</strong></h2><p>在 2024 年 2月 16 日，Open AI 宣布推出全新的生成式人工智能模型”Sora”。据了解，<strong>通过文本指令，Sora 以直接输出长达 60 秒的视频，并且包含高度细致的背景、复杂的多角度镜头，以及富有情感的多个角色。</strong></p>
+<p>这意味着，继文本、图像之后，OpenAI 将其先进的 A 技术拓展到了视频领域。OpenAI 亦表示，Sora 是能够理解和模拟现实世界的模型的基础，<strong>这一能力将是实现 AGI(通用人工智能)的重要里程碑。</strong></p>
+<p>对于 OpenAI 视频生成模型的出现，业内其实早有预期，但仍有人评价称”比想象中来得更快”，亦有人振奋地表示<strong>“我们真的看到新工业革命来临”</strong>。</p>
+<p>Sora 的 60 秒视频基本上展示了它解决了以下3 个 AI 视频技术难题：</p>
+<p>（1）真实物理世界的逼真模拟 （2）角色的一致性 （3）长镜头的稳定性</p>
+<p><strong>Sora官方网址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://openai.com/sora">Sora (openai.com)</a></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-2255a62cc1937cf6898469a2eca9e551_720w.jpg" alt="img"></p>
+<p><strong>官方Youtobe 介绍视频:</strong> <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=HK6y8DAPN_0">Introducing Sora — OpenAI’s text-to-video model - YouTube</a></p>
+<p><strong>Sora 论文网址:</strong> <a target="_blank" rel="noopener" href="https://openai.com/research/video-generation-models-as-world-simulators">Video generation models as world simulators (openai.com)</a></p>
+<p><strong>目前 OpenAI 官网上已经更新了 48 个 Sora 生成的视频 demo，色彩艳丽，效果逼真。</strong></p>
+<p><strong>官方网站：</strong><a target="_blank" rel="noopener" href="https://openai.com/sora?open_in_browser=true">Sora video</a></p>
+<h3 id="博主解读"><a href="#博主解读" class="headerlink" title="博主解读"></a><strong>博主解读</strong></h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV196421T7VD/?vd_source=05604b6063f398633af513a2e9a7c804">全网最详细Sora解析，OpenAI又一王炸！【Git源宝】哔哩哔哩bilibili</a></p>
+<p><a target="_blank" rel="noopener" href="https://caaiartlab.feishu.cn/docx/LgmFdXTRwo0m5yxkQRIcO6RGnRf">Sora来了，我们离AI模拟世界还有多远 </a>【<strong>详细分析解读</strong>】</p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/xu5L4ZtFyJ1XyD15_8vf0Q">关于 Sora，我有十个小白问题 (qq.com)</a></p>
+<h3 id="Sora怎么申请"><a href="#Sora怎么申请" class="headerlink" title="Sora怎么申请"></a><strong>Sora怎么申请</strong></h3><p>渠道一（官方）</p>
+<p><a target="_blank" rel="noopener" href="https://forum.openai.com/">OpenAI Forum</a></p>
+<p>OpenAl 的官方论坛，据消息透露加入论坛有机会获得内测资格</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-2b70bb0f6e312855bcc4381ab804cd49_720w.jpg" alt="img"></p>
+<p>渠道二（官方）</p>
+<p>Red Team 开始公开招募了，要求比较高。Sam 之前说过，如果进入到红队，可以有 Sora 的内测机会。</p>
+<p><a target="_blank" rel="noopener" href="https://openai.com/form/red-teaming-network">OpenAI Red Teaming Network application</a></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-9693c8b1b95488a30338e0f83e258d3e_720w.jpg" alt="img"></p>
+<h3 id="Sora怎么使用"><a href="#Sora怎么使用" class="headerlink" title="Sora怎么使用"></a>Sora怎么使用</h3><p>（PS:目前根据文生图模型 DALL·E案例，一定是先给 ChatGPTPlus 付费用户使用，需要注册或者升级 GPT PIus 可以看这个教程：<a href="https://magicpr.github.io/2024/01/30/how-to-upgrade-chatgpt4/">5分钟带你搞定chatGPT4.0 保姆级升级教程</a>）</p>
+<p><strong>使用Sora前的准备工作</strong></p>
+<p>在开始之前，确保您已经拥有了OpenAl账目，并获得了Sora的访问权限。准备好您想要转化成视频的文本描述，记住越详细越好。</p>
+<p><strong>1.Sora使用步骤一：文本描述</strong></p>
+<p>登录您的OpenAl账户，找到Sora的使用界面。在指定区域输入您的文本描述，可以是一个故事概述、场景描述或是具体的动作指令。</p>
+<p><strong>2.Sora使用步骤二：生成视频</strong></p>
+<p>完成文本描述和自定义设置后，点击“生成视频”按钮。Sora将开始处理您的请求，这可能需要几分钟时间。</p>
+<p>完成后，您可以预览生成的视频。</p>
+<p>需要注意的是，截止2024年2月18日，0penAI只向部分专业用户开放了Sora的访问权限。普通用户只能观看其发布的演示视频。</p>
+<h3 id="模型效果对比"><a href="#模型效果对比" class="headerlink" title="模型效果对比"></a><strong>模型效果对比</strong></h3><p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-3491a7405e500ebbbd5e83d71c14c45e_720w.jpg" alt="img"></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-efb62a66f7af28fa3d9ce623b195f0d3_720w.jpg" alt="img"></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-5496a76de6c0db766b6e43901576b381_720w.jpg" alt="img"></p>
+<h3 id="Sora的六大优势"><a href="#Sora的六大优势" class="headerlink" title="Sora的六大优势"></a><strong>Sora的六大优势</strong></h3><p>《每日经济新闻》记者经过对官方技术报告的梳理，总结出了 Sora 的6大优势：</p>
+<p><strong>（1）准确性和多样性</strong>：Sora 的显著特征之一是能够准确解释长达 135 个单词的长提示。它可以准确地解释用户提供的文本输入，并生成具有各种场景和人物的高质量视频剪辑。这一新工具可将简短的文本描述转化成长达1 分钟的高清视频。它涵盖了广泛的主题，从人物和动物到郁郁葱葱的风景、城市场景、花园，甚至是水下的纽约市，可根据用户的要求提供多样化的内容。</p>
+<p><strong>（2）强大的语言理解：</strong>OpenAI 利用 Dall-E 模型的 re-captioning(重述要点)技术，生成视觉训练数据的描述性字幕，不仅能提高文本的准确性，还能提升视频的整体质量。此外，与 DALL·E3类似，OpenAI 还利用 GPT 技术将简短的用户提示转换为更长的详细转译，并将其发送到视频模型。这使 Sora 能够精确地按照用户提示生成高质量的视频。</p>
+<p><strong>（3）以图&#x2F;视频生成视频：</strong>Sora 除了可以将文本转化为视频，还能接受其他类型的输入提示，如已经存在的图像或视频。这使 Sora 能够执行广泛的图像和视频编辑任务，如创建完美的循环视频、将静态图像转化为动画、向前或向后扩展视频等。0penAI 在报告中展示了基于 DALL·E2和 DALL·E3 的图像生成的 demo 视频。这不仅证明了 Sora 的强大功能，还展示了它在图像和视频编辑领域的无限潜力。</p>
+<p><strong>（4）视频扩展功能：</strong>由于可接受多样化的输入提示，用户可以根据图像创建视频或补充现有视频。作为基于Transformer 的扩散模型，Sora 还能沿时间线向前或向后扩展视频。从 OpenAI 提供的4个 demo 视频看，都从同一个视频片段开始，向时间线的过去进行延伸。因此，尽管开头不同，但视频结局都是相同的。</p>
+<p><strong>（5）优异的设备适配性：</strong>Sora 具备出色的采样能力，从宽屏的 1920x1080p 到竖屏的 1080x1920，两者之间的任何视频尺寸都能轻松应对。这意味着 Sora 能够为各种设备生成与其原始纵横比完美匹配的内容。而在生成高分辨率内容之前，Sora 还能以小尺寸迅速创建内容原型。</p>
+<p><strong>（6）场景和物体的一致性和连续性：</strong>Sora 可以生成带有动态视角变化的视频，人物和场景元素在三维空间中的移动会显得更加自然。Sora 能够很好地处理遮挡问题，现有模型的一个问题是，当物体离开视野时，它们可能无法对其进行追踪。而通过一次性提供多帧预测，Sora 可确保画面主体即使暂时离开视野也能保持不变。</p>
+<h3 id="Sora可能带来的影响"><a href="#Sora可能带来的影响" class="headerlink" title="Sora可能带来的影响"></a><strong>Sora可能带来的影响</strong></h3><p>如果 Sora 能够真正意义上实现文生视频，可能会带来哪些影响呢?</p>
+<p>1、没有演员的影视作品出现，对演员来说是个小挑战，将出现真正的“虚拟偶像”，此前的二次元人物并没有真正达到“偶像”的级别。</p>
+<p>2、利好编剧行业，剧本、文本创作力成为核心竞争力。</p>
+<p>3、Sora 可能才是真正的文生视频，此前的文生视频大多只有 2 秒，仅仅是对象的小幅度移动。</p>
+<p>4、0penAI 继续拉大领先程度，对众多还在进行大模型测试打分 pk 的厂商，构成压力。</p>
+<p>5、<strong>直接的影响是影视行业，特别是特效行业。使用 AI 来制作一些特效和高风险的镜头，可以大幅降低拍摄成本，也可以避免很多危险。</strong></p>
+<p>6、摄影师行业也会受到影响，用文本来生成一些视频，可以省去很多拍摄工作。</p>
+<p>7、<strong>短视频流行开以后，视频剪辑师也随之成为一个热门职业。如果视频剪辑的工作可以用 AI来代替，可能会有很多视频剪辑师失业。</strong></p>
+<p>8、对于很多短视频创作者来说，用 AI 来替代繁琐的剪辑工作，可以大幅提高工作效率。</p>
+<p>9、很多歌手拍摄 MV 都是大成本制作，如果可以用 AI 来生成所需要的 MV 画面，也可以省去很大一部分制作成本</p>
+<p>10、另外，如果真正意义上的文生视频得以实现，可能会有不法份子利用这项技术实施新手段的违法犯罪,</p>
+<p>不过，从 Sora 官网目前展示的视频画面效果来看，效果还没那么逼近真实，短期内不会产生让行业失业，但会有辅助作用，做个动画片应该问题不大。</p>
+<p>在 Sora 官网，OpenAI 表示，Sora 是能够理解和模拟现实世界的模型的基础，OpenAI 相信这一能力将是实现AGI 的重要里程碑。</p>
+<p>至于 Sora 文生视频到底能带来多大影响，会不会翻车，还需要”让子弹飞一会儿”。</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-c5db1de1cbf89da28577a707c61d573c_720w.jpg" alt="img"></p>
+<h2 id="二、技术拆解"><a href="#二、技术拆解" class="headerlink" title="二、技术拆解"></a><strong>二、技术拆解</strong></h2><h3 id="腾讯科技拆解文"><a href="#腾讯科技拆解文" class="headerlink" title="腾讯科技拆解文"></a><strong>腾讯科技拆解文</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/gSvxvOVqYtGcKw0ueDGbFA">OpenAI 王炸模型引爆科技圈，我们第一时间深读了官方技术报告</a></p>
+<h3 id="阿里巴巴分析文"><a href="#阿里巴巴分析文" class="headerlink" title="阿里巴巴分析文"></a><strong>阿里巴巴分析文</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/xP46EocNg1x7IlTN_iF8kw">复刻Sora有多难？一张图带你读懂Sora的技术路径 (qq.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3RnrO7fSMizEl3mN3SXG5w">一文看Sora技术推演 </a></p>
+<h3 id="素人笔记"><a href="#素人笔记" class="headerlink" title="素人笔记"></a><strong>素人笔记</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/exFp0nP8vpSc2duQILHbvA">Sora 是怎么训练出来的|笔记</a></p>
+<h3 id="参考论文"><a href="#参考论文" class="headerlink" title="参考论文"></a><strong>参考论文</strong></h3><p><a target="_blank" rel="noopener" href="https://huggingface.co/collections/pxiaoer/sora-65d0e2db17e2b305e0fc572e">Sora参考论文 </a></p>
+<h2 id="三、名人观点"><a href="#三、名人观点" class="headerlink" title="三、名人观点"></a><strong>三、名人观点</strong></h2><h3 id="360董事长周鸿祎"><a href="#360董事长周鸿祎" class="headerlink" title="360董事长周鸿祎"></a><strong>360董事长周鸿祎</strong></h3><p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-70d04c82cdf5bb0c2310236ab4d5b2de_720w.jpg" alt="img"></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-97285eae02662ae8fa919abf946c8a48_720w.jpg" alt="img"></p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-3d1e4977a6be4ba84de5641e2ed86e39_720w.jpg" alt="img"></p>
+<h3 id="特斯拉CEO-马斯克"><a href="#特斯拉CEO-马斯克" class="headerlink" title="特斯拉CEO 马斯克"></a><strong>特斯拉CEO 马斯克</strong></h3><p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-b4f50fcc8a4c08c06ea00f94162babd4_720w.jpg" alt="img"></p>
+<h3 id="Runway-联合创始人兼-CEO-Cristobal-Valenzuela"><a href="#Runway-联合创始人兼-CEO-Cristobal-Valenzuela" class="headerlink" title="Runway 联合创始人兼 CEO Cristóbal Valenzuela"></a><strong>Runway 联合创始人兼 CEO Cristóbal Valenzuela</strong></h3><p>感慨后浪拍前浪，以前需要花费一年的进展，变成了几个月就能实现，又变成了几天、几小时。</p>
+<p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-4bad4a7a646534db59501e0695612368_720w.jpg" alt="img"></p>
+<h3 id="出门问问CEO-李志飞"><a href="#出门问问CEO-李志飞" class="headerlink" title="出门问问CEO 李志飞"></a><strong>出门问问CEO 李志飞</strong></h3><p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-a1470ef3316b3a7ea0cdc72b1bad00d6_720w.jpg" alt="img"></p>
+<h3 id="前阿里副总裁贾杨清"><a href="#前阿里副总裁贾杨清" class="headerlink" title="前阿里副总裁贾杨清"></a><strong>前阿里副总裁贾杨清</strong></h3><p><img src="http://magicpr.oss-cn-beijing.aliyuncs.com/img/v2-26e214bc4ba634b650fc2cf2a54c7423_720w.jpg" alt="img"></p>
+<h2 id="四、相关报道"><a href="#四、相关报道" class="headerlink" title="四、相关报道"></a><strong>四、相关报道</strong></h2><h3 id="商业博主刘润"><a href="#商业博主刘润" class="headerlink" title="商业博主刘润"></a><strong>商业博主刘润</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/NLi0-N6um818-D-srFnFyQ">刘润:OpenAI 全新发布的 Sora，到底意味着什么?)</a></p>
+<h3 id="AI-博主卡兹克"><a href="#AI-博主卡兹克" class="headerlink" title="AI 博主卡兹克"></a><strong>AI 博主卡兹克</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/C-wSkjzkNsX0EFaJFTv38w">OpenAI全新发布文生视频模型Sora - 现实，不存在了 (qq.com)</a></p>
+<h3 id="量子位"><a href="#量子位" class="headerlink" title="量子位"></a><strong>量子位</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/K6ZXhH6xHsw0Nfj5TnKCXw">效果炸裂!0penAI 首个视频生成模型发布，1 分钟流畅高清，网友:整个行业 RIP</a></p>
+<h3 id="钛媒体"><a href="#钛媒体" class="headerlink" title="钛媒体"></a><strong>钛媒体</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/O63VYPdkQTvoQjYYqDHKBQ">许四清:Sora 进一步拉大了中美 AI 差距</a></p>
+<h3 id="新智元"><a href="#新智元" class="headerlink" title="新智元"></a><strong>新智元</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/93z4Ta91yLv7PB1pnBM9mg">OpenAI首个AI视频模型炸裂登场，彻底端掉行业饭碗！60秒一镜到底惊人，世界模型真来了？</a></p>
+<h3 id="清华大学"><a href="#清华大学" class="headerlink" title="清华大学"></a><strong>清华大学</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/OQVLA6p9sXnivY6BQaaLTQ">OpenAI发布文生视频模型Sora，AIGC视频时代正加速到来 </a></p>
+<h3 id="央视网"><a href="#央视网" class="headerlink" title="央视网"></a><strong>央视网</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/PS_WfoOX35XoScgoQJJVcA">OpenAI 首个文生视频模型亮相，你觉得咋样?</a></p>
+<h3 id="新华社"><a href="#新华社" class="headerlink" title="新华社"></a><strong>新华社</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/VoOYgbPRcajlMD9sBQeSrA">Sora来了，会砸掉谁的饭碗？</a></p>
+<h3 id="CSDN"><a href="#CSDN" class="headerlink" title="CSDN"></a><strong>CSDN</strong></h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/1iqYtq13DniEJxTLBwTJmg">OpenAI 大杀四方，Sora 彻底革了视频的命</a></p>
+<p><a href="https://magicpr.github.io/2024/02/27/register-chatgpt-account/">上一篇</a></p>
+<p><a href="https://magicpr.github.io/">目录</a></p>
+<p><a href="https://magicpr.github.io/2024/03/05/claude3-opus/">下一篇</a></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 akalius173@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '3d0ddc0abd1462e27956',
+            clientSecret: '80c092f151d1ad480f7284b02063cfe2966363b7',
+            repo: 'magicpr.github.io',
+            owner: 'magicpr',
+            admin: ['magicpr'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'false',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
