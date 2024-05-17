@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://magicpr.github.io/2024/05/16/create-your-blog/</loc>
+    <loc>https://magicpr.github.io/hello-chatgpt-4o</loc>
     
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/02/27/register-chatgpt-account/</loc>
+    <loc>https://magicpr.github.io/create-your-blog</loc>
+    
+    <lastmod>2024-05-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/register-chatgpt-account</loc>
     
     <lastmod>2024-03-05</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/01/30/how-to-upgrade-chatgpt4/</loc>
+    <loc>https://magicpr.github.io/how-to-upgrade-chatgpt4</loc>
     
     <lastmod>2024-03-05</lastmod>
     
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/03/05/claude3-opus/</loc>
+    <loc>https://magicpr.github.io/claude3-opus</loc>
     
     <lastmod>2024-03-05</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/02/29/sora-guidance/</loc>
+    <loc>https://magicpr.github.io/sora-guidance</loc>
     
     <lastmod>2024-03-05</lastmod>
     
@@ -47,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/01/31/register-chatgpt/</loc>
+    <loc>https://magicpr.github.io/register-chatgpt</loc>
     
     <lastmod>2024-02-29</lastmod>
     
@@ -56,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/01/31/build-huanshoupalu-server/</loc>
+    <loc>https://magicpr.github.io/build-huanshoupalu-server</loc>
     
     <lastmod>2024-02-27</lastmod>
     
@@ -65,9 +74,18 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/2024/01/30/subscribe-onlyfans-by-credit-card/</loc>
+    <loc>https://magicpr.github.io/subscribe-onlyfans-by-credit-card</loc>
     
     <lastmod>2024-02-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/about/</loc>
+    
+    <lastmod>2024-01-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +94,7 @@
 
   <url>
     <loc>https://magicpr.github.io/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,63 +102,119 @@
   
   <url>
     <loc>https://magicpr.github.io/tags/GPT/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/GPT%E5%8D%87%E7%BA%A7/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/onlyfans/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/build-server/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/sora/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/claude/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/blog-github-chocolatey-nodejs-hexo-oss/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/chatgpt4/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/chatgpt-4o/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/blog/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/github/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/chocolatey/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/nodejs/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/hexo/</loc>
+    <lastmod>2024-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/oss/</loc>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -149,42 +223,42 @@
   
   <url>
     <loc>https://magicpr.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/onlyfans/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/chatGPT/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/sora/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/claude/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
