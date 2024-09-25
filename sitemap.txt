@@ -12,15 +12,15 @@ https://magicpr.github.io/about/
 https://magicpr.github.io/
 https://magicpr.github.io/tags/build-server/
 https://magicpr.github.io/tags/claude/
-https://magicpr.github.io/tags/chatgpt4/
-https://magicpr.github.io/tags/chatgpt-4o/
-https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/
 https://magicpr.github.io/tags/blog/
 https://magicpr.github.io/tags/github/
 https://magicpr.github.io/tags/chocolatey/
 https://magicpr.github.io/tags/nodejs/
 https://magicpr.github.io/tags/hexo/
 https://magicpr.github.io/tags/oss/
+https://magicpr.github.io/tags/chatgpt4/
+https://magicpr.github.io/tags/chatgpt-4o/
+https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/
 https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/
 https://magicpr.github.io/tags/sora/
 https://magicpr.github.io/tags/onlyfans/
@@ -29,7 +29,7 @@ https://magicpr.github.io/tags/ChatGPT-Plus-%E4%B8%80%E9%94%AE%E5%8D%87%E7%BA%A7
 https://magicpr.github.io/tags/OpenAI-%E4%B8%93%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8/
 https://magicpr.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/
 https://magicpr.github.io/categories/claude/
-https://magicpr.github.io/categories/chatGPT/
 https://magicpr.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
+https://magicpr.github.io/categories/chatGPT/
 https://magicpr.github.io/categories/sora/
 https://magicpr.github.io/categories/onlyfans/
