@@ -18,9 +18,9 @@ https://magicpr.github.io/tags/chocolatey/
 https://magicpr.github.io/tags/nodejs/
 https://magicpr.github.io/tags/hexo/
 https://magicpr.github.io/tags/oss/
+https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/
 https://magicpr.github.io/tags/chatgpt4/
 https://magicpr.github.io/tags/chatgpt-4o/
-https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/
 https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/
 https://magicpr.github.io/tags/sora/
 https://magicpr.github.io/tags/onlyfans/
