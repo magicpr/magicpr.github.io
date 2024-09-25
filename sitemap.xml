@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://magicpr.github.io/claude3-opus</loc>
+    
+    <lastmod>2024-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://magicpr.github.io/hello-chatgpt-4o</loc>
     
     <lastmod>2024-05-17</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://magicpr.github.io/how-to-upgrade-chatgpt4</loc>
-    
-    <lastmod>2024-03-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/claude3-opus</loc>
     
     <lastmod>2024-03-05</lastmod>
     
@@ -110,27 +110,6 @@
 
   
   <url>
-    <loc>https://magicpr.github.io/tags/GPT/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/tags/GPT%E5%8D%87%E7%BA%A7/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/tags/onlyfans/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://magicpr.github.io/tags/build-server/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -138,35 +117,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/tags/sora/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://magicpr.github.io/tags/claude/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/tags/blog-github-chocolatey-nodejs-hexo-oss/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -181,6 +132,13 @@
   
   <url>
     <loc>https://magicpr.github.io/tags/chatgpt-4o/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -229,6 +187,27 @@
   </url>
   
   <url>
+    <loc>https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/sora/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/onlyfans/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://magicpr.github.io/tags/OpenAI-ChatGPT-%E8%B4%A6%E6%88%B7%E4%B8%80%E9%94%AE%E6%B3%A8%E5%86%8C/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -259,7 +238,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/categories/onlyfans/</loc>
+    <loc>https://magicpr.github.io/categories/claude/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -273,6 +252,13 @@
   </url>
   
   <url>
+    <loc>https://magicpr.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://magicpr.github.io/categories/sora/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -280,14 +266,7 @@
   </url>
   
   <url>
-    <loc>https://magicpr.github.io/categories/claude/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicpr.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://magicpr.github.io/categories/onlyfans/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
