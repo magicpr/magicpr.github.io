@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magicpr.github.io/subscribe-midjourney</loc>
+    
+    <lastmod>2024-10-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://magicpr.github.io/wildcard-can-do-what</loc>
     
     <lastmod>2024-09-25</lastmod>
@@ -103,7 +112,7 @@
 
   <url>
     <loc>https://magicpr.github.io/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,119 +120,140 @@
   
   <url>
     <loc>https://magicpr.github.io/tags/build-server/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/claude/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/blog/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/github/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chocolatey/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/nodejs/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/hexo/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/oss/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chatgpt4/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chatgpt-4o/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chatGPT%E5%8D%87%E7%BA%A7/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/chatgpt%E6%B3%A8%E5%86%8C/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/sora/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/onlyfans/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/OpenAI-ChatGPT-%E8%B4%A6%E6%88%B7%E4%B8%80%E9%94%AE%E6%B3%A8%E5%86%8C/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/ChatGPT-Plus-%E4%B8%80%E9%94%AE%E5%8D%87%E7%BA%A7/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/tags/OpenAI-%E4%B8%93%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/Midjourney/</loc>
+    <lastmod>2024-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/Discord/</loc>
+    <lastmod>2024-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicpr.github.io/tags/WildCard/</loc>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -232,42 +262,42 @@
   
   <url>
     <loc>https://magicpr.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/claude/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/chatGPT/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/sora/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://magicpr.github.io/categories/onlyfans/</loc>
-    <lastmod>2024-09-27</lastmod>
+    <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
